@@ -1,9 +1,5 @@
 /* Some very big stuff? Dunno... */
 @media (min-width: 856px) and (max-width: 1024px) {
-	.lastpost {
-		width: 20%;
-		margin: 3px 0 0 5px;
-	}
 	#alerts .alert_time {
 		display: none;
 	}
@@ -11,7 +7,6 @@
 		display: block;
 	}
 }
-
 /* Still not enough data or people to test this... */
 /* This needs more data and this range is probably for iPad Air (alike) tablets... */
 @media (min-width: 721px) and (max-width: 855px) {
@@ -28,7 +23,6 @@
 		display: block;
 	}
 }
-
 @media (max-width: 855px) {
 	#profile_menu_top .textmenu,
 	#pm_menu_top .textmenu,
@@ -43,7 +37,6 @@
 		display: none !important;
 	}
 }
-
 @media (min-width: 720px) and (max-width: 799px) {
 	#top_info .welcome {
 		display: none;
@@ -70,11 +63,7 @@
 		width: calc(100% - 90px);
 		max-width: unset;
 	}
-	h3.catbg, h3.catbg a, h3.catbg a:hover {
-	height: fit-content;
-	}
 }
-
 /* We have shared things... */
 @media screen and (max-width: 720px) {
 	/* Remove some content from the hooks table */
@@ -111,7 +100,7 @@
 		margin: 0 auto;
 	}
 	#mobile_action .notify_dropdown a {
-		border-bottom: 1px solid #999;
+		border-bottom: var(--border_width) var(--border_style) var(--border_color);
 	}
 	#mobile_action .notify_dropdown a:last-of-type {
 		border-bottom: none;
@@ -131,10 +120,9 @@
 	.mobile_buttons {
 		display: block;
 	}
-
 	/* Stuff */
 	#top_info {
-		padding: 10px;
+		padding: 1px;
 	}
 	.infolinks {
 		display: inline-block;
@@ -162,39 +150,23 @@
 		flex: 0 0 auto;
 		margin: 0 !important;
 	}
-
 	/* Menu */
 	.quickbuttons li:hover ul {
 		display: none;
 	}
-
 	/* General */
 	.action_home {
 		width: 100% !important;
-	}
-	#profile_menu_top > img.avatar {
-		margin: 4px 5px 0 0;
-	}
-	.navigate_section ul {
-/*		margin: 4px 0 -10px 0; */
 	}
 	#wrapper {
 		border-left: 0;
 		border-right: 0;
 		border-radius: 0;
-		padding-bottom: 1px;
 	}
-	#top_section {
-		height: 40px;
+	#footer {
+		padding: 10px;
 	}
-	#top_info > li > a {
-		padding: 0 7px 7px 7px;
-		margin: -3px -19px 5px 12px;
-	}
-	#top_info > li > a.open {
-		height: fit-content;
-}
-	#top_section .inner_wrap, #wrapper, #header, #footer .inner_wrap {
+	#top_section .inner_wrap, #wrapper, #header .inner_wrap, #footer .inner_wrap, #main_menu .inner_wrap {
 		width: 100%;
 	}
 	#upper_section, #inner_section, #content_section {
@@ -217,7 +189,6 @@
 	#languages_form {
 		padding-right: 10px;
 	}
-
 	/* BoardIndex */
 	.board_stats {
 		display: none;
@@ -232,11 +203,15 @@
 		min-height: 2em;
 	}
 	.up_contain .lastpost {
-		border-top: 1px solid #ddd;
+		background: var(--children_bg_color);
+		border-top: var(--border_width) var(--border_style) var(--border_color);
 		min-height: initial;
 	}
 	.lastpost p {
 		margin: 5px;
+	}
+	.board_lastpost {
+		padding: 0px 0px 0px 0px;
 	}
 	span.postby {
 		display: inline-block;
@@ -249,17 +224,12 @@
 	#upshrink_stats p.inline, #upshrink_stats p.last {
 		padding: 5px;
 	}
-
 	/* MessageIndex */
 	#messageindex .board_icon, #messageindex .lastpost {
 		display: none;
 	}
 	#messageindex .info {
 		padding: 8px 10px;
-	}
-	.info_block {
-		display: block;
-		width: 95%;
 	}
 	.moderation a {
 		padding: 3px;
@@ -274,7 +244,6 @@
 	#unread .info, #unreadreplies .info {
 		padding-left: 5px;
 	}
-
 	/* Display (Topics) */
 	.poster {
 		float: none;
@@ -337,7 +306,6 @@
 	.pagelinks {
 		margin: 0;
 	}
-
 	/* Profile */
 	#admin_content .content {
 		padding: 0;
@@ -420,7 +388,7 @@
 	}
 	/* Hide me */
 	#inner_wrap.hide_720, #inner_wrap time, #inner_wrap .news,
-	#search_form, #smflogo, #message_index_jump_to, .nextlinks, #display_jump_to,
+	#search_form,	 #message_index_jump_to, .nextlinks, #display_jump_to,
 	#siteslogan, th.id_group, th.registered, th.posts, th.reg_group, th.reg_date, td.reg_group, td.reg_date,
 	td.id_group, td.registered, td.posts:not(.unique), td.statsbar.posts,
 	#approve_list .ip, #approve_list .date_registered, #group_members .date_registered,
@@ -435,15 +403,10 @@
 	#mail_queue .priority, #attachments .posted {
 		display: none;
 	}
-
 	/* Admin */
-	.admin_search, form.admin_search {
-		padding: 1px 5px 3px 5px;
-		font-size: 0.9em;
+	.admin_search {
 		float: none;
-		justify-content: space-between;
-		align-items: center;
-}
+	}
 	.table_grid.half_content {
 		width: 100%;
 		margin: 0;
@@ -470,12 +433,10 @@
 		display: inline-block;
 	}
 }
-
 /* Tricky menu */
 @media (min-width: 561px) {
 	#mobile_user_menu.popup_container {
 		display: block !important;
-		height: auto;
 	}
 	div[id^="mobile_generic_menu_"].popup_container {
 		display: block !important;
@@ -486,12 +447,20 @@
 		box-shadow: none;
 		border-width: 0;
 		background: none;
-		border-radius: 7px;
-		background: #e8e8e8;
 	}
 }
 @media (max-width: 560px) {
 	/* This is general */
+	
+	#header {
+	display: block;
+	/*justify-content: auto;*/
+    min-height: 100px;
+	}
+	.user {
+	text-align: left;
+	margin-left: 30px;
+	}
 	#main_menu .popup_container,
 	#genericmenu .popup_container,
 	#adm_submenus .popup_container {
@@ -499,7 +468,7 @@
 		position: fixed;
 		top: 0;
 		left: 0;
-		width: 100%;
+		width: 80%;
 		height: 100%;
 		z-index: 5;
 	}
@@ -507,12 +476,13 @@
 	#genericmenu .popup_heading,
 	#adm_submenus .popup_heading {
 		display: block;
-		color: #fff;
-		background: #1686d2;
+		margin: 0;
 	}
 	#main_menu {
 		margin: 0;
+		border: none;
 	}
+	.popup_window,
 	#main_menu .popup_window,
 	#genericmenu .popup_window,
 	#adm_submenus .popup_window {
@@ -522,21 +492,6 @@
 		max-height: 90vh;
 		overflow-x: hidden;
 		overflow-y: scroll;
-		border-radius: 7px;
-		background: linear-gradient(to bottom, #fefefe 0, #dedede 50%);
-	}
-	.popup_window {
-		top: 15%;
-		width: 95vw;
-		min-height: auto;
-		max-height: 90vh;
-		overflow-x: hidden;
-		overflow-y: scroll;
-		border-radius: 7px;
-		background: #1686d9;
-	}
-	#adm_submenus .popup_window {
-		background: #fff;
 	}
 	#adm_submenus {
 		padding: 0;
@@ -547,19 +502,17 @@
 	}
 	.generic_menu {
 		display: none;
+		margin: 0;
 	}
 	#mobile_user_menu .dropmenu,
 	div[id^="mobile_generic_menu_"] .generic_menu {
 		display: block;
-		height: auto;
-		padding-top: 0;
-		background: #fff;
 	}
 	a.mobile_user_menu,
 	a[class^="mobile_generic_menu_"] {
 		display: flex;
 		align-items: center;
-		margin: 0 0 4px 0;
+		margin: 3px 0px 0px 0px;
 	}
 	a[class^="mobile_generic_menu_"] {
 		margin: 8px 0;
@@ -569,6 +522,7 @@
 		background: url(../images/icons/menu.svg) no-repeat;
 		height: 24px;
 		width: 24px;
+		margin-left: 30px;
 	}
 	.dropmenu li, .dropmenu li:hover,
 	.dropmenu li a, .dropmenu li a:hover,
@@ -602,23 +556,19 @@
 	}
 	.dropmenu li.subsections > a::after {
 		position: absolute;
-		padding: 5px 7px;
+		padding: 5px 0;
 		right: 10px;
-		font: 83.33%/150% Arial, sans-serif;
+		font-family: var(--dropmenu_subsections_font_family);
+		font-size: var(--dropmenu_subsections_font_size);
+		line-height: var(--dropmenu_subsections_line_height);
 		content: "\25bc" !important;
 	}
-	.dropmenu li li.subsections > a::after {
-		position: absolute;
-		padding: 5px 5px 5px 0;
-		right: 10px;
-		font: 83.33%/150% Arial, sans-serif;
-		content: "\25ba";
-}
 	.dropmenu li ul,
 	.dropmenu li li:hover ul, .dropmenu li li ul {
 		position: relative;
 		border-radius: 0;
 		left: 0;
+		top: 0;
 		box-shadow: none;
 	}
 	/* 3rd level menu tests */
@@ -626,7 +576,6 @@
 		margin: 0 !important;
 	}
 }
-
 @media (min-width: 481px) and (max-width: 560px) {
 	/* Calendar */
 	#event_time_options {
@@ -639,13 +588,14 @@
 		width: 98%;
 	}
 }
-
 /* Entry level phones */
 @media (max-width: 480px) {
 	h1.forumtitle a, h1.forumtitle {
-		padding: 5px 0 0 4px;
-		max-width: 300px;
-		margin: 10px 0;
+		padding: 0px;
+		max-width: 220px;
+		margin: 0px;
+		min-height: 80px;
+		display: inline-flex;
 	}
 	.board_moderators {
 		display: none;
@@ -655,13 +605,11 @@
 	}
 	#pm_menu, #alerts_menu, #profile_menu {
 		min-width: initial;
-		width: 25em;
+		width: 27em;
 		max-width: calc(100vw - 17px);
 	}
 	#footer {
-/*		text-align: center; */
-		padding: 10px;
-		margin-bottom: 0;
+		text-align: center;
 	}
 	#footer ul {
 		width: 100%;
@@ -708,7 +656,6 @@
 	.login #ajax_loginuser, .login #ajax_loginpass, .login #loginuser, .login #loginpass, .login select {
 		width: 100%;
 	}
-
 	/* Display (Topic View) */
 	.subject_title input {
 		width: 90%;
@@ -716,7 +663,6 @@
 	#quickreply_options .roundframe {
 		padding: 8px 10px 12px 10px;
 	}
-
 	/* Post Section */
 	#post_header dd {
 		width: 55%;
@@ -795,7 +741,6 @@
 	.sceditor-container {
 		min-height: 375px;
 	}
-
 	/* Memberlist */
 	th.website_url,
 	td.website_url, td.reg_group, td.reg_date, td.post_num {
@@ -848,13 +793,11 @@
 		float: left;
 		margin: 0 0 5px 0;
 	}
-
 	.error_info, #fatal_error {
 		width: 100% !important;
 		padding: 0 !important;
 		float: none;
 	}
-
 	/* Calendar */
 	.event_options_left, .event_options_right {
 		width: 100%;
@@ -865,7 +808,6 @@
 	#evtitle {
 		width: 98%;
 	}
-
 	/* Menu tests */
 	#header_news_lists_preview, tr[id^="list_news_lists_"] td:nth-child(even),
 	#header_smiley_set_list_default, #header_smiley_set_list_url, #header_smiley_set_list_check,
@@ -914,25 +856,12 @@
 		display: inline-block;
 	}
 }
-
 /* iPhone Tests */
 @media (max-width: 320px) {
-
 }
-.column {
-  float: right;
-  width: 30%;
-/*  padding: none; */
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* For the Packages Permissions th */
-form th {
-	color: #000;
+/*Unread Links Hide*/
+@media (max-width: 770px) {
+    .unread_links {
+		display: none;
+	}
 }
