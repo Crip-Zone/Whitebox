@@ -5,6 +5,5 @@ global $settings;
 
 // argument(s): images_url as saved in settings
 $txt['theme_thumbnail_href'] = '%1$s/thumbnail.png';
-$txt['theme_description'] = 'The CleanWhite theme from Crip Zone Themes.<br><br>Author: Crip<br><br>Updated to v2.1 by The CripZone:<br>
-							Special thanks to: Sych0, Live627, shawnb61 and Bigguy';
+$txt['theme_description'] = 'The WhiteBox theme from CripZone Themes.<br><br>Author: Crip<br><br>Updated to v2.1 by TheCripZone Team:<br>Skhilled, Dave, TwitchisMental<br><br>';
 ?>
