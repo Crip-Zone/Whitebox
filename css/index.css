@@ -169,7 +169,7 @@
 	--title_bar_border_top_width: 2px;
 	--title_bar_border_radius: 2px 2px 0 0;
 	--title_bar_link: hsl(0, 0%, 100%);
-	--title_bar_th: hsl(0, 100%, 50%);
+	--title_bar_th: hsl(0, 0%, 100%);
 
 	/* Calendar colors for birthdays, events and holidays */
 
@@ -239,7 +239,7 @@
 
 	/* Generic & Progress Bar */
 
-    --generic_bar_bar_bg_color: hsl(200,  99%, 45%);
+    --generic_bar_bar_bg_color: url(../images/1bar_stats.png) no-repeat 100%;
 	--generic_bar_bar_box_shadow: 4px -4px 8px hsla(0, 0%, 0%, 0.1) inset, 4px 4px 8px hsla(0, 0%, 100%, 0.3) inset;
 	--generic_bar_bar_border_radius: 1px;
 	--generic_bar_border_color: hsl(0, 4%, 80%);
