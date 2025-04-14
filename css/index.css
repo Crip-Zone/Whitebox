@@ -383,11 +383,11 @@
 	/* Post Bit Section */
 
     --display_head_txt_color: hsl(0, 0%, 58%);
-	--poster_online_link_color: hsl(30, 98%, 38%);
-	--key_post_info_link_color: hsl(30, 65%, 41%);
+	--poster_online_link_color: hsl(203, 100%, 36%);
+	--key_post_info_link_color: hsl(203, 100%, 36%);
 	--keyinfo_postinfo_modified_txt_color: hsl(0, 0%, 20%);
 	--subject_title_link_color: hsl(0, 0%, 20%);
-	--page_number_txt_color: hsl(30, 65%, 41%);
+	--page_number_txt_color: #0071b7;
 	--inner_border_color: hsl(0, 0%, 75%);
 	--inner_border_style: solid;
 	--inner_border_width: 1px;
@@ -1654,14 +1654,14 @@ html[lang="el-GR"] .inline_mod_check {
 .quickbuttons > li:hover > a, .quickbuttons > li > a:focus {
 	color: hsl(0, 0%, 100%);
 	border-color: var(--button_hover_border_color);
-	background: hsl(36, 100%, 50%)4;
+	background: hsl(36, 100%, 50%);
 	text-decoration: none;
 }
 .button:hover, .button:focus {
 	color: #fff;;
 }
 .button:hover, #search_form .button:hover  {
-	background: hsl(36, 100%, 50%)4;
+	background: hsl(36, 100%, 50%);
 }
 /* the active one */
 .button.active {
