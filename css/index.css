@@ -387,7 +387,7 @@
 	--key_post_info_link_color: hsl(203, 100%, 36%);
 	--keyinfo_postinfo_modified_txt_color: hsl(0, 0%, 20%);
 	--subject_title_link_color: hsl(0, 0%, 20%);
-	--page_number_txt_color: #0071b7;
+	--page_number_txt_color: hsl(203, 100%, 36%);
 	--inner_border_color: hsl(0, 0%, 75%);
 	--inner_border_style: solid;
 	--inner_border_width: 1px;
