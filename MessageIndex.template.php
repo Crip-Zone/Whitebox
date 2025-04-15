@@ -137,7 +137,7 @@ function template_main()
 		<div id="messageindex">';
 
 		echo '
-			<div class="topic_header" id="topic_header">';
+			<div class="topic_header cat_bar" id="topic_header">';
 
 		// Are there actually any topics to show?
 		if (!empty($context['topics']))
