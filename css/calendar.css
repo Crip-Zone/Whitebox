@@ -104,7 +104,7 @@ td.days:hover {
 }
 #main_grid td.holidays,
 #month_grid td.holidays {
-	background: rgba(23, 110, 245, 0.1);
+	background: rgb(196, 244, 249);
 }
 #main_grid td.birthdays,
 #month_grid td.birthdays {
